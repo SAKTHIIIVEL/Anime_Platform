@@ -35,8 +35,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow-primary">
-              <span className="text-foreground font-bold text-xl">AV</span>
+            <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center shadow-glow-primary">
+              <img
+                src="/favicon.png"
+                alt="AV Logo"
+                className="w-8 h-8 rounded-full inline-block align-middle"
+              />
+
             </div>
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               AnimeVerse
@@ -53,7 +58,7 @@ const Navbar = () => {
               <Search className="w-4 h-4" />
               <span>Search</span>
             </Link>
-            
+
             {isLoggedIn ? (
               <>
                 <Link to="/favorites" className="flex items-center space-x-2 text-foreground/80 hover:text-primary transition-colors">
@@ -123,7 +128,7 @@ const Navbar = () => {
               <Search className="w-4 h-4" />
               <span>Search</span>
             </Link>
-            
+
             {isLoggedIn ? (
               <>
                 <Link
